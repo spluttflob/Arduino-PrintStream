@@ -7,23 +7,28 @@ running on STM32 and ESP32 processors.
 
 ```cpp
 #include <PrintStream.h>
-void setup() 
+
+void setup () 
 {
-    Serial.begin(115200);
+    Serial.begin (115200);
     Serial << "Hello, World!" << endl;
 
-    Serial << F("Counting to 0xf in hexadecimal: ")
-        << hex << noleadingzeros << showbase;
-    for (int i = 0; i < 0x10; i++)
-        Serial << i << ' ';
+    Serial << "Counting to 0xf in hexadecimal: "
+           << hex << noleadingzeros << showbase;
+    for (int index = 0; index < 0x10; index++)
+    {
+        Serial << index << ' ';
+    }
     Serial << dec << endl;
 
-    float voltage = analogRead(A0) * 5 / 1024.0;
-    Serial << F("The voltage on analog pin A0 is ") << setprecision(3) 
-           << voltage << F(" V.") << endl;
+    float voltage = analogRead (A0) * 3.3 / 4095.0;
+    Serial << "The voltage on analog pin A0 is " << setprecision (3) 
+           << voltage << " V." << endl;
 }
 
-void loop() { }
+void loop ()
+{
+}
 ```
 
 ## Installation

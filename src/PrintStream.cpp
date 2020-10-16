@@ -9,10 +9,11 @@ static bool boolalphaPrintStream = false;
 static bool leadingZerosPrintStream = true;
 static uint8_t precisionPrintStream = 2;
 static char byteSeparatorPrintStream = '\0';
-enum : char{
+enum lettercasePrintStream : char {
     LOWERCASE = 0x7F,
     UPPERCASE = 0x5F
-} static casePrintStream = LOWERCASE;
+};
+static lettercasePrintStream casePrintStream = LOWERCASE;
 static bool showbasePrintStream = false;
 
 template <class T>
