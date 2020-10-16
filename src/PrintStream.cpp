@@ -20,7 +20,7 @@ Print &printIntegral(Print &printer, T i);
 
 Print &endl(Print &printer) {
   printer.println();
-  printer.flush();
+//   printer.flush();
   return printer;
 }
 
@@ -45,7 +45,7 @@ Print &noshowbase(Print &printer) {
 }
 
 Print &flush(Print &printer) {
-  printer.flush();
+//   printer.flush();
   return printer;
 }
 
