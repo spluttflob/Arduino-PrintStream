@@ -1,7 +1,7 @@
 # Another Fork of Arduino-PrintStream
-
 A simple library that adds `std::cout`-like support for the Arduino using the 
-`<<`-operator).
+`<<`-operator. This fork has been made convenient for use with Arduino 
+running on STM32 and ESP32 processors. 
 
 ## Example usage
 
