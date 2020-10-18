@@ -7,7 +7,7 @@
 static uint8_t formatPrintStream = DEC;
 static bool boolalphaPrintStream = false;
 static bool leadingZerosPrintStream = true;
-static uint8_t precisionPrintStream = 2;
+static int8_t precisionPrintStream = 2;       // Fix a warning: use signed int8
 static char byteSeparatorPrintStream = '\0';
 enum lettercasePrintStream : char {
     LOWERCASE = 0x7F,
